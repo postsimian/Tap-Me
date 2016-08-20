@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         setupGame()
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,15 +44,19 @@ class ViewController: UIViewController {
         timeLabel.text = "Time: \(seconds)"
         scoreLabel.text = "Score: \(count)"
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("subtractTime"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.subtractTime), userInfo: nil, repeats: true)
     }
     
     func subtractTime() {
-        seconds--
+        seconds -= 1
         timeLabel.text = "Time: \(seconds)"
         
         if(seconds == 0) {
             timer.invalidate()
+            let alert = UIAlertController(title: "Time is up!", message: "You scored \(count) points", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Play Again", style: UIAlertActionStyle.Default, handler: {
+                action in self.setupGame()}))
+            presentViewController(alert, animated: true, completion: nil)
         }
     }
 
