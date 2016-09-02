@@ -14,6 +14,7 @@
 		B2973DFB1D5430E700E72D8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2973DF91D5430E700E72D8D /* LaunchScreen.storyboard */; };
 		B2973E061D5430E700E72D8D /* Tap_MeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2973E051D5430E700E72D8D /* Tap_MeTests.swift */; };
 		B2973E111D5430E700E72D8D /* Tap_MeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2973E101D5430E700E72D8D /* Tap_MeUITests.swift */; };
+		B29DA2A31D6BC9B800E15394 /* TapMe_Resources in Resources */ = {isa = PBXBuildFile; fileRef = B29DA2A21D6BC9B800E15394 /* TapMe_Resources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B2973E0C1D5430E700E72D8D /* Tap MeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap MeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2973E101D5430E700E72D8D /* Tap_MeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_MeUITests.swift; sourceTree = "<group>"; };
 		B2973E121D5430E700E72D8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B29DA2A21D6BC9B800E15394 /* TapMe_Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TapMe_Resources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				B2973E041D5430E700E72D8D /* Tap MeTests */,
 				B2973E0F1D5430E700E72D8D /* Tap MeUITests */,
 				B2973DEE1D5430E700E72D8D /* Products */,
+				B29DA2A21D6BC9B800E15394 /* TapMe_Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29DA2A31D6BC9B800E15394 /* TapMe_Resources in Resources */,
 				B2973DFB1D5430E700E72D8D /* LaunchScreen.storyboard in Resources */,
 				B2973DF81D5430E700E72D8D /* Assets.xcassets in Resources */,
 				B2973DF61D5430E700E72D8D /* Main.storyboard in Resources */,
@@ -482,6 +486,7 @@
 				B2973E171D5430E700E72D8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2973E181D5430E700E72D8D /* Build configuration list for PBXNativeTarget "Tap MeTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				B2973E1A1D5430E700E72D8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2973E1B1D5430E700E72D8D /* Build configuration list for PBXNativeTarget "Tap MeUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				B2973E1D1D5430E700E72D8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
